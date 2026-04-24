@@ -1,0 +1,254 @@
+:root {
+  --primary: #2563eb;
+  --dark: #1e293b;
+  --light: #f8fafc;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.search {
+  width: 40%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.filter span {
+  cursor: pointer;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+.filter span:hover {
+  color: var(--primary);
+}
+.languages {
+  cursor: pointer;
+}
+
+/* hero entry point */
+.hero {
+  height: 60vh;
+  margin-top: 80px;
+  background: url("images/entry.jfif") center/cover;
+  position: relative;
+}
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+#hero-btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 50px 10%;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.fav-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.fav-icon.active {
+  color: #ef4444;
+  font-variation-settings: "FILL" 1;
+}
+
+.card_body {
+  padding: 20px;
+  text-align: center;
+}
+.addBtn {
+  width: 100%;
+  padding: 10px;
+  background: var(--dark);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* bag modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 15px;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+.cart-qty {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart-qty img {
+  width: 80px;
+  height: 50px;
+  padding-right: 10px;
+}
+.qty-btn {
+  margin-right: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--dark);
+  color: white;
+}
+
+/* --- responsive design --- */
+@media (min-width: 1400px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .search {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .hero {
+    height: 50vh;
+    margin-top: 140px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 30px 5%;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .filter {
+    gap: 10px;
+  }
+}

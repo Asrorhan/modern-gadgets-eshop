@@ -1,0 +1,25 @@
+{
+  "search_placeholder": "Search for gadgets...",
+  "hero_title": "Elevate Your Style",
+  "hero_btn": "Shop Collection",
+  "free_shipping": "Free Shipping",
+  "secure_payment": "Secure Payment",
+  "cart_title": "Your Shopping Bag",
+  "empty_cart": "Your bag is empty",
+  "checkout": "Checkout",
+  "hero_desc": "Explore our curated collection of modern essentials.",
+  "shipping_detail": "On orders over $50",
+  "payment_detail": "100% protected",
+  "total_label": "Total",
+  "footer_text": "© 2026 E-Shop. Made by Asrorjon Kudratov",
+  "add_to_cart": "Add to cart",
+  "added_to_bag": "has been added to your bag",
+  "products": {
+    "1": { "name": "Airpods Pro", "desc": "Crystal clear sound" },
+    "2": { "name": "Headphone", "desc": "Weather-resistant tech" },
+    "3": { "name": "Aurora Pro", "desc": "Smart lighting" },
+    "4": { "name": "Smart Watch", "desc": "Breathable fabric" },
+    "5": { "name": "Gaming Controller", "desc": "Maximum performance" },
+    "6": { "name": "VR Glasses", "desc": "Genuine leather comfort" }
+  }
+}
