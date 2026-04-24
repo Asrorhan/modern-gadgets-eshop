@@ -1,3 +1,4 @@
+<img width="1920" height="1080" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/70a19b3a-49d8-4f08-bc37-0deaec3e04af" />
 Modern Gadget E-Shop (Vanilla JS)
 I built this project to put my JavaScript skills to the test in a "real-world" scenario. I didn't follow any tutorials or use frameworks like React; instead, I designed the UI and architected the entire logic from scratch.
 
